@@ -7,17 +7,17 @@
         mc:Ignorable="d"
         Title="ListarSalidas" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="Buscar&#xD;&#xA;">
+        <GroupBox Header="Buscar&#xD;&#xA;" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
             <StackPanel>
                 <Label Content="Fecha Inicio:"/>
                 <DatePicker x:Name="datePickerInicio"/>
                 <Label Content="Fecha Fin:"/>
                 <DatePicker x:Name="datePickerFin"/>
-                <Button Content="Buscar" Click="btnBuscar_Click"/>
+                <Button Content="Buscar" Click="btnBuscar_Click" Background="#FF8ACDF3" BorderBrush="#FF4F2FF7" FontWeight="Bold" Foreground="White"/>
             </StackPanel>
         </GroupBox>
         <GroupBox Header="Salidas" Margin="0,150,0,0">
-            <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" Height="206">
+            <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" Height="206" Background="#FFECEDAC">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}" Width="100"/>
                     <DataGridTextColumn Header="Peso" Binding="{Binding Peso}" Width="100"/>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Semana2"
         mc:Ignorable="d"
         Title="Menu" Height="450" Width="800">
-    <Grid>
+    <Grid Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}">
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
@@ -17,19 +17,19 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <GroupBox Grid.ColumnSpan="3" Grid.RowSpan="2" Header="Menu" Margin="50">
+        <GroupBox Grid.ColumnSpan="3" Grid.RowSpan="2" Header="Menu" Margin="50" Background="{DynamicResource {x:Static SystemColors.WindowBrushKey}}">
             <StackPanel>
                 <Label Content="Operaciones:" Margin="5"/>
                 <StackPanel Orientation="Horizontal">
-                    <Button Content="Ingresos"  Margin="5"/>
-                    <Button Content="Salida" Click="btnSalida_Click" Margin="5"/>
+                    <Button Content="Ingresos"  Margin="5" Background="#FF31C0D9"/>
+                    <Button Content="Salida" Click="btnSalida_Click" Margin="5" Background="#FF96E96B"/>
                 </StackPanel>
 
                 <Label Content="Mantenimientos:" Margin="5"/>
                 <StackPanel Orientation="Horizontal">
                     <Button Content="Conductores"  Margin="5"/>
                     <Button Content="Transportistas"  Margin="5"/>
-                    <Button Content="Camiones" Click="btnCamiones_Click" Margin="5"/>
+                    <Button Content="Camiones" Click="btnCamiones_Click" Margin="5" Background="#FF74D145"/>
                     <Button Content="Productos" Margin="5"/>
                 </StackPanel>
 
@@ -37,7 +37,7 @@
                 <StackPanel Orientation="Horizontal">
                     <Button Content="Cargas"  Margin="5"/>
                     <Button Content="Ingresos" Margin="5"/>
-                    <Button Content="Salidas" Click="btnSalidas_Click" Margin="5"/>
+                    <Button Content="Salidas" Click="btnSalidas_Click" Margin="5" Background="#FF63C532"/>
                 </StackPanel>
             </StackPanel>
         </GroupBox>

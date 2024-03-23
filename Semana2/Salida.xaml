@@ -9,7 +9,7 @@
 
     <Grid Margin="10,50,10,50">
         <GroupBox Header="Salida" HorizontalAlignment="Center" VerticalAlignment="Center" Width="760">
-            <Grid Height="107">
+            <Grid Height="107" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
@@ -54,8 +54,8 @@
                 <TextBox x:Name="txtPesoSalida" Grid.Row="0" Grid.Column="7" Margin="5"/>
 
                 <!-- Botones -->
-                <Button Content="Guardar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="5" Click="btnGuardar_Click"/>
-                <Button Content="Cancelar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="5"/>
+                <Button Content="Guardar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="5" Click="btnGuardar_Click" Background="#FF494CD9" Foreground="White"/>
+                <Button Content="Cancelar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="5" Foreground="#FFFFF1F1" Background="Red"/>
             </Grid>
         </GroupBox>
     </Grid>
