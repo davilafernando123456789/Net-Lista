@@ -1,0 +1,62 @@
+﻿<Window x:Class="Semana2.Salida"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Semana2"
+        mc:Ignorable="d"
+        Title="Salida" Height="550" Width="800">
+
+    <Grid Margin="10,50,10,50">
+        <GroupBox Header="Salida" HorizontalAlignment="Center" VerticalAlignment="Center" Width="760">
+            <Grid Height="107">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Labels y TextBoxes -->
+                <Label Content="Tipo de Documento:" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTipoDocumento" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+                <Label Content="Numero de Documento:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtNumeroDocumento" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+                <Label Content="Peso:" Grid.Row="0" Grid.Column="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPeso" Grid.Row="0" Grid.Column="3" Margin="5"/>
+
+                <Label Content="Tipo de auto:" Grid.Row="0" Grid.Column="4" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtTipoAuto" Grid.Row="0" Grid.Column="5" Margin="5"/>
+
+                <Label Content="Nombre de transportista:" Grid.Row="1" Grid.Column="2" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtNombreTransportista" Grid.Row="1" Grid.Column="3" Margin="5"/>
+
+                <Label Content="Fecha y hora:" Grid.Row="1" Grid.Column="4" VerticalAlignment="Center"/>
+                <DatePicker x:Name="dpFechaHora" Grid.Row="1" Grid.Column="5" Margin="5"/>
+
+                <Label Content="Peso de ingreso:" Grid.Row="1" Grid.Column="6" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPesoIngreso" Grid.Row="1" Grid.Column="7" Margin="5"/>
+
+                <Label Content="Peso de salida:" Grid.Row="0" Grid.Column="6" VerticalAlignment="Center"/>
+                <TextBox x:Name="txtPesoSalida" Grid.Row="0" Grid.Column="7" Margin="5"/>
+
+                <!-- Botones -->
+                <Button Content="Guardar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="5" Click="btnGuardar_Click"/>
+                <Button Content="Cancelar" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Right" Margin="5"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
